@@ -6,12 +6,15 @@ public class DecimalCalculator implements ICalculator<DecimalNumber>{
         return new DecimalNumber(resultValue);
     };
     public DecimalNumber Substract(DecimalNumber first, DecimalNumber second) {
-        return new DecimalNumber(5.0);
+        double resultValue = first.minus(first, second);
+        return new DecimalNumber(resultValue);
     };
     public DecimalNumber Multiply(DecimalNumber first, DecimalNumber second) {
-        return new DecimalNumber(5.0);
+        double resultValue = first.asterisc(first, second);
+        return new DecimalNumber(resultValue);
     };
     public DecimalNumber Divide(DecimalNumber first, DecimalNumber second) {
-        return new DecimalNumber(5.0);
+        double resultValue = first.slash(first, second);
+        return new DecimalNumber(resultValue);
     };
 }

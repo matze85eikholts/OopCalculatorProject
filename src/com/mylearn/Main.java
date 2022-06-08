@@ -9,5 +9,14 @@ public class Main {
         DecimalNumber secondValue = new DecimalNumber(10.0);
         DecimalNumber result = dc.Add(firstValue, secondValue);
         System.out.println(result.getValue());
+        System.out.println("------------------------------------------");
+        result = dc.Substract(firstValue, secondValue);
+        System.out.println(result.getValue());
+        System.out.println("------------------------------------------");
+        result = dc.Multiply(firstValue, secondValue);
+        System.out.println(result.getValue());
+        System.out.println("------------------------------------------");
+        result = dc.Divide(firstValue, secondValue);
+        System.out.println(result.getValue());
     }
 }
