@@ -26,5 +26,20 @@ public class Main {
         System.out.println(complexResult.getRealPart());
         System.out.println(complexResult.getImaginaryPart());
         System.out.println("------------------------------------------");
+        DecimalCalculator dc = new DecimalCalculator();
+        DecimalNumber firstValue = new DecimalNumber(5.0);
+        DecimalNumber secondValue = new DecimalNumber(10.0);
+        DecimalNumber result = dc.Add(firstValue, secondValue);
+        System.out.println(result.getValue());
+        System.out.println("------------------------------------------");
+        result = dc.Subtract(firstValue, secondValue);
+        System.out.println(result.getValue());
+        System.out.println("------------------------------------------");
+        result = dc.Multiply(firstValue, secondValue);
+        System.out.println(result.getValue());
+        System.out.println("------------------------------------------");
+        result = dc.Divide(firstValue, secondValue);
+        System.out.println(result.getValue());
+
     }
 }
